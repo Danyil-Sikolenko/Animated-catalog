@@ -31,7 +31,7 @@ function renderItems(items) {
             <div class="price">${item.price}$</div>
          </div>
        <div class="right">
-            <div class="add">+</div>
+            <a href="store.html" class="add">+</a>
           </div>
       </div>
     `;

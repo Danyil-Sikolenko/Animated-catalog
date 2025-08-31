@@ -10,7 +10,6 @@
   --aside: 300px;
   --model-width: 300px;
   --model-height: 640px;
-  /* --model-height: 87.5vh; */
 }
 
 @font-face {
@@ -252,6 +251,9 @@ body {
   line-height: 20px;
   position: relative;
   top: -5px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
 }
 
 .item img {
