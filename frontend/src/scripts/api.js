@@ -1,10 +1,10 @@
 import { showLoader, hideLoader } from "./loader.js";
-import { URLITEMS, URLMODELS } from "../api/api.js";
+import { URLRENDERITEMS, URLRENDERMODELS } from "../api/api.js";
 
 export async function DataModels() {
     try {
         showLoader()
-        const response = await fetch(URLMODELS)
+        const response = await fetch(URLRENDERMODELS)
 
         if (!response.ok) {
             throw new Error(`ERROR: ${response.status} ${response.statusText}`)
@@ -25,7 +25,7 @@ export async function DataModels() {
 export async function DataItems() {
     try {
         showLoader()
-        const response = await fetch(URLITEMS)
+        const response = await fetch(URLRENDERITEMS)
 
         if (!response.ok) {
             throw new Error(`ERROR: ${response.status} ${response.statusText}`)

@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderModels(models);
   const items = await DataItems()
   renderItems(items)
-  renderAside(items)
 });
 
 function renderItems(items) {
